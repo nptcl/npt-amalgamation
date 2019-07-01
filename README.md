@@ -7,12 +7,6 @@ https://github.com/nptcl/npt
 
 ## Compile
 
-ANSI-C
-```
-$ cc -lm lisp.c shell.c
-```
-
-
 FreeBSD
 ```
 $ cc -lm -DLISP_FREEBSD lisp.c shell.c
