@@ -1,7 +1,7 @@
 # Npt-amalgamation
 
 Npt-amalgamation is combining many source files of Npt-repository into a single code "lisp.c".  
-Npt is a small Lisp Programming Language.
+Npt is a small Lisp Programming Language.  
 https://github.com/nptcl/npt
 
 
