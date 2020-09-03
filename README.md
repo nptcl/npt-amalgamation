@@ -9,26 +9,22 @@ https://github.com/nptcl/npt
 
 FreeBSD
 ```
-$ cc -lm -DLISP_FREEBSD lisp.c shell.c
+$ cc -DLISP_FREEBSD lisp.c shell.c -lm
 ```
 
 Linux
 ```
-$ cc -lm -DLISP_LINUX lisp.c shell.c
+$ cc -DLISP_LINUX lisp.c shell.c -lm
 ```
 
 FreeBSD (full)
 ```
-$ cc -O3 -lm -lpthread -ledit \
--DLISP_FREEBSD -DLISP_THREAD -DLISP_PROMPT_EDITLINE \
-lisp.c shell.c
+$ cc -O3 -DLISP_FREEBSD -DLISP_PROMPT_EDITLINE lisp.c shell.c -lm -ledit
 ```
 
 Linux (full)
 ```
-$ cc -O3 -lm -lpthread -lreadline \
--DLISP_LINUX -DLISP_THREAD -DLISP_PROMPT_READLINE \
-lisp.c shell.c
+$ cc -O3 -DLISP_LINUX -DLISP_PROMPT_READLINE lisp.c shell.c -lm -lreadline
 ```
 
 
