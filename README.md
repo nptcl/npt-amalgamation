@@ -1,7 +1,7 @@
 # Npt-amalgamation
 
 Npt-amalgamation is combining many source files of Npt-repository into a single code "lisp.c".  
-Npt is a small Lisp Programming Language.  
+Npt is an ANSI Common Lisp Programming Language.
 https://github.com/nptcl/npt
 
 
@@ -19,12 +19,12 @@ $ cc -DLISP_LINUX lisp.c shell.c -lm
 
 FreeBSD (full)
 ```
-$ cc -O3 -DLISP_FREEBSD -DLISP_PROMPT_EDITLINE lisp.c shell.c -lm -ledit
+$ cc -O3 -DLISP_FREEBSD -DLISP_EDITLINE lisp.c shell.c -lm -ledit
 ```
 
 Linux (full)
 ```
-$ cc -O3 -DLISP_LINUX -DLISP_PROMPT_READLINE lisp.c shell.c -lm -lreadline
+$ cc -O3 -DLISP_LINUX -DLISP_READLINE lisp.c shell.c -lm -lreadline
 ```
 
 
